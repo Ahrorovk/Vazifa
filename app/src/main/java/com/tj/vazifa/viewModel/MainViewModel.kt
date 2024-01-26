@@ -68,7 +68,7 @@ class MainViewModel @Inject constructor(
                             if (data == "false")
                                 dataStoreManager.updateIsInServer(2)
                             else if (data == "true") {
-                                dataStoreManager.updateIsInServer(2)
+                                dataStoreManager.updateIsInServer(1)
                             }
                         }
                     }
