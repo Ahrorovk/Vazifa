@@ -1,13 +1,9 @@
 package com.tj.vazifa.activities
 
-import android.Manifest
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.net.ConnectivityManager
-import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -41,15 +37,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.tj.vazifa.R
+import com.tj.vazifa.components.Permissions
 import com.tj.vazifa.data.local.DataStoreManager
 import com.tj.vazifa.ui.theme.VazifaTheme
 import com.tj.vazifa.viewModel.MainViewModel
-import com.tj.vazifa.R
-import com.tj.vazifa.components.Permissions
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineName
@@ -161,6 +154,7 @@ class LoadingActivity : ComponentActivity(), CoroutineScope {
                                     }
 
                                     2 -> {
+                                        delay(2000)
                                         val intent =
                                             Intent(applicationContext, WebActivity::class.java)
                                         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
