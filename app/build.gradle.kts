@@ -10,10 +10,10 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.upgrade.team"
+        applicationId = "yagona.vazifa.tj"
         minSdk = 24
         targetSdk = 33
-        versionCode = 1
+        versionCode = 3
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
