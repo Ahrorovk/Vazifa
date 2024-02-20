@@ -15,7 +15,7 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Vazifa"
-        tools:targetApi="31">
+        tools:targetApi="33">
         <activity
             android:name=".activities.LoadingActivity"
             android:exported="true"
@@ -32,11 +32,6 @@
             android:name=".activities.WebActivity"
             android:theme="@style/AppTheme"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
     </application>
 
